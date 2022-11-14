@@ -1,0 +1,12 @@
+{% for room in rooms %}
+<diV>
+    <a href="{% url 'update-room' room.id %}">Update room</a>
+    <a href="{% url 'delete-room' room.id %}">Delete</a>
+    <a href="{% url 'profile' room.host.id %}">
+        @{{room.host.username}}
+    </a>
+    <h5>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
+    <small>{{room.topic.name}}</small>
+    <hr>
+</diV>
+{% endfor %}
