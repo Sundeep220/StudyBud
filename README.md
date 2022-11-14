@@ -5,7 +5,7 @@
 - Before running this project: 
 
   -> Create a virtual environment, in Windows command is as follows: \
-    `pythom -m venv env`
+    `pythom -m venv env` \
    -> To activate: \
      `env/Scripts/activate`
 
